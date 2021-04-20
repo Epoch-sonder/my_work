@@ -54,9 +54,6 @@ echo $time_start;
 //INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
 //VALUES ('TEST','TEST','TEST','TEST','TEST','TEST');
 $host='localhost'; // имя хоста (уточняется у провайдера)
-$user='roslesinforg'; // заданное вами имя пользователя, либо определенное провайдером
-$password='oXuZW7VOB9Ge'; // заданный вами пароль
-$database='roslesinforg'; // имя базы данных, которую вы должны создать
 $user=''; // заданное вами имя пользователя, либо определенное провайдером
 $password=''; // заданный вами пароль
 $database=''; // имя базы данных, которую вы должны создать
