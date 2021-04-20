@@ -1,0 +1,356 @@
+
+/* Стили для строк таблиц, второстепенные расшифровки и итоги в отчетах summarypol */
+.subpart {color: #999; background: #fafafa;}
+
+.subpart td
+	{font-size: 12px;}
+
+.subpart td:nth-child(1)
+  {padding-left: 30px;}
+
+.subpart td:nth-child(2),
+.subpart td:nth-child(3),
+.subpart td:nth-child(4)
+	{padding-left: 25px}
+
+.sum {background: #ccc}
+
+/* Для сокращения высоты таблицы при заполнении формы _form */
+.minheight td label {display: none;}
+.minheight td div {margin-bottom: 0;}
+
+.markerGreen {color: green;}
+.markerRed {color: red;}
+
+/* Для отчета - подробной сводки */
+.summary-report-pol-detail {}
+.summary-report-pol-detail th {
+  text-align: center;
+}
+
+.summary-report-pol {}
+
+.summary-report-pol th,
+.summary-report-pol td:nth-child(2),
+.summary-report-pol td:nth-child(3),
+.summary-report-pol td:nth-child(4) {
+  text-align: center;
+}
+
+.totalpol {background: #fffc99; vertical-align: middle}
+.totalpoldata {background: #ffffcc; font-weight: bold;}
+.completedpol {background: #99ffaa;}
+.completedpoldata {background: #ddffdd; font-weight: bold;}
+
+
+.message_head {
+	cursor: pointer;
+}
+
+
+.hide_all_details,
+.show_all_details,
+.markers {
+	display: inline-block;
+	margin: auto 20px;
+	color: #58c;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+.vertext {
+  height: 340px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.vertext div {
+  writing-mode: vertical-rl;
+  font-size: 13px;
+  width: 100%;
+  height: 100%;
+}
+
+/*p.vertical{
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+} */
+
+div.vertical{
+  writing-mode: tb-rl;
+  filter: flipH flipV;
+  height: 340px;
+  font-size: 13px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+div.verticals{
+  writing-mode: tb-rl;
+  filter: flipH flipV;
+  height: 288px;
+  font-size: 13px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.colnumbers {display: none}
+
+.rli_logo {display: none; float: left}
+.rli_logo img {width: 200px}
+
+.question {font-style: italic; font-weight: bold; color: #000}
+.answer {color: #777; margin: 0 0 20px 40px}
+.answer strong {font-style: italic}
+.signature {font-weight: normal; color: #999;}
+
+
+/* Стили для модуля ПОЛ */
+.forest-work-form .field-forestwork-reporter {width: 30%; float: left; padding-right: 3%}
+.forest-work-form .field-forestwork-branch_id {width: 30%; float: left; padding-right: 3%; clear: right;}
+.forest-work-form .field-forestwork-date,
+.forest-work-form .field-forestwork-federal_subject_id {width: 50%; float: left; padding-right: 3%}
+
+
+/* Стили для модуля PD */
+.pd-work-form .field-pdwork-executor {width: 50%; float: left; padding-right: 10px;}
+.pd-work-form .field-pdwork-branch {width: 50%; float: left; padding-right: 10px;}
+.pd-work-form .field-pdwork-customer {width: 50%; padding-right: 10px;}
+
+.pd-work-form .field-pdwork-basedoc_type {width: 40%; float: left; padding-right: 10px;}
+.pd-work-form .field-pdwork-basedoc_name {width: 20%; float: left; padding-right: 10px;}
+.pd-work-form .field-pdwork-basedoc_datasign {width: 20%; float: left; padding-right: 10px;}
+.pd-work-form .field-pdwork-basedoc_datefinish {width: 20%; float: left; padding-right: 10px;}
+.pd-work-form .field-pdwork-rli_order_num,
+.pd-work-form .field-pdwork-data_order {width: 20%;padding-right: 10px;float: left;}
+.pd-work-form  .field-pdwork-signed_by_ca {padding-right: 10px;float: left; margin-bottom: 5px; width: 190px; }
+.pd-work-form .field-pdwork-name_Branch{ padding-right: 10px;float: left;width: 50%; margin-top: 5px}
+
+.pd-work-form .field-pdwork-work_cost {width: 60%; float: left; padding-right: 10px;}
+.pd-work-form .field-pdwork-work_datastart {width: 40%; float: left; padding-right: 10px;}
+
+.pd-work-form .field-pdwork-work_name {width: 60%; float: left; padding-right: 10px;}
+.pd-work-form .field-pdwork-work_othername {width: 40%; float: left; padding-right: 10px; display: none;}
+.pd-work-form .field-in_complex {width: 100%; clear: both;}
+
+.pd-work-form .field-pdwork-federal_subject,
+.pd-work-form .field-pdwork-forestry, 
+.pd-work-form .field-pdwork-subforestry, 
+.pd-work-form .field-pdwork-subdivforestry,
+.pd-work-form .field-pdwork-quarter {width: 33.3%; padding-right: 10px;}
+.pd-work-form .field-pdwork-work_area {width: 33.3%; padding-right: 10px;}
+
+.pd-work-form .field-pdwork-forestry, 
+.pd-work-form .field-pdwork-subforestry, 
+.pd-work-form .field-pdwork-subdivforestry,
+.pd-work-form .field-pdwork-quarter {display: none;}
+
+
+
+#custom_date_request .field-reportdaterequest-reportdate,
+#custom_date_request .field-reportdaterequest-reportdate label {float: left; padding-right: 10px;}
+#custom_date_request {padding-bottom: 30px;}
+.report_date_description {width: 100%}
+
+
+/* Стили для модуля PD process */
+.pd-work-process-form .field-pdworkprocess-report_date {width: 30%;}
+.pd-work-process-form .field-pdworkprocess-pd_object {width: 50%;}
+.pd-work-process-form .field-pdworkprocess-pd_step {width: 50%;}
+.pd-work-process-form .field-pdworkprocess-step_startplan {width: 25%; float: left; padding-right: 10px;}
+.pd-work-process-form .field-pdworkprocess-step_finishplan {width: 25%; float: left; padding-right: 10px;}
+.pd-work-process-form .field-pdworkprocess-progress_status {clear: both}
+.pd-work-process-form .field-pdworkprocess-comment {clear: both;}
+
+
+/* Стили для модуля LU - размещение закупок */
+.zakup-card-form .field-zakupcard-zakup_num {width: 35%; float: left; padding-right: 5%}
+.zakup-card-form .field-zakupcard-zakup_link {width: 65%; float: left;}
+.zakup-card-form .field-zakupcard-contest_type {width: 35%; float: left; padding-right: 3%}
+.zakup-card-form .field-zakupcard-date_placement {width: 30%; float: left; padding-right: 3%}
+.zakup-card-form .field-zakupcard-price_start {width: 35%; float: left;}
+
+.zakup-card-form .field-winner_name,
+.zakup-card-form .field-winner_we {width: 50%; padding-right: 3%}
+.zakup-card-form .field-price_final,
+.zakup-card-form .field-price_rli  {width: 50%; float: left; padding-right: 3%}
+.zakup-card-form .field-zakupcard-contract_type,
+.zakup-card-form .field-zakupcard-contract_num,
+.zakup-card-form .field-zakupcard-date_contract_start,
+.zakup-card-form .field-zakupcard-date_contract_finish {width: 25%; float: left; padding-right: 3%}
+.zakup-card-form .field-zakupcard-finsource_type {width: 35%; float: left; padding-right: 3%}
+.zakup-card-form .field-zakupcard-smp_attraction {width: 25%; float: left;}
+.zakup-card-form .field-zakupcard-customer_name {clear: both;}
+.zakup-card-form .field-zakupcard-land_cat,
+.zakup-card-form .field-zakupcard-fed_subject,
+.zakup-card-form .field-zakupcard-region,
+.zakup-card-form .field-zakupcard-region_subdiv {width: 50%; float: left; padding-right: 3%}
+.zakup-card-form .field-zakupcard-dzz_type,
+.zakup-card-form .field-zakupcard-dzz_resolution {width: 25%; float: left; padding-right: 2%}
+.zakup-card-form .field-zakupcard-veget_period {width: 50%; float: left; margin-bottom: 30px;}
+/*.zakup-card-form .field-zakupcard-dzz_control_date {width: 50%;}*/
+.zakup-card-form .dzz_request,
+.zakup-card-form .dzz_pd {width: 50%; float: left; padding-right: 3%}
+.zakup-card-form .file_list {margin-bottom: 15px; padding-left: 20px;}
+.zakup-card-form #cameral_work ,.zakup-card-form #field_work,.zakup-card-form #preparatory_work{width: 22%;float: left;margin-right: 20px;}
+.zakup-card-form #preparatory,.zakup-card-form #field, .zakup-card-form #cameral {max-width: 190px;width: 190px;}
+
+.file_list i {color: #c00;}
+
+.zakup-card-form #requestFileForm .field-dzzRequestFile,
+.zakup-card-form #requestFileForm .field-dzzPdFile {display: inline-block;}
+.zakup-card-form #requestFileForm .field-uploadform-zakup_num {display: none}
+
+.field-luobject-fed_subject,
+.field-luobject-land_cat,
+.field-luobject-region,
+.field-luobject-region_subdiv {width: 50%; float: left; padding-right: 2%}
+
+.lu-object-form .field-luobject-fed_subject,
+.lu-object-form .field-luobject-land_cat {display: none}
+
+hr            {border: 0; height: 2px; clear: both;}
+hr.greenline  {background: #88C86F;}
+hr.blueline   {background: #337ab7;}
+
+.clr {clear: both;}
+.help-block {font-size: 80%}
+
+
+.audit-form .field-audit-date_start,
+.audit-form .field-audit-date_finish,
+.audit-form .field-audit-audit_type,
+.audit-form .field-audit-audit_quantity {width: 200px; float: left; padding-right: 2%}
+.audit-form .field-audit-fed_district,
+.audit-form .field-audit-fed_subject {width: 300px; float: left; padding-right: 2%}
+.audit-form .field-audit-oiv,
+.audit-form .field-audit-organizer {padding-right: 2%}
+
+.field-luphase-sort_order{width: 25%;float: left;padding-right: 10px;}
+.field-luphase-phase_number{width: 25%;float: left;padding-right: 10px;}
+.field-luphase-phase_name{width: 50%;float: left;padding-right: 10px;}
+
+
+
+
+
+.Text_Ogl{text-align: center;}
+/* Стили для модуля LU - План график */
+.processLU {
+    display: none;
+}
+.plan-schedule {font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;border-collapse: collapse;color: #686461;}
+.plan-schedule caption {padding: 10px;color: #fff;background: #88C86F;font-size: 18px;text-align: left;font-weight: bold;}
+.plan-schedule  th {border-bottom: 3px solid #B9B29F;padding: 10px;text-align: left;}
+.plan-schedule td {padding: 10px;}
+.plan-schedule tr {background: #fff;}
+.plan-schedule .name-phase {background: #E8E6D1;}
+
+.top-margin{margin-top: 18px;}
+#luprocess-date_finish-kvdate {width: 155px;max-width: 155px;}
+#luprocess-volume {width: 50px;max-width: 50px;}
+#luprocess-staff{width: 50px;max-width: 50px;}
+#luprocess-person_responsible{width: 150px;max-width: 150px;}
+#luprocess-mtr{width: 110px;max-width: 110px;}
+.data_finish_lu_process{max-width: 150px;width: 150px;}
+.logotip {display: none;}
+
+/* Стили для модуля audit-process - update  */
+.field-auditprocess-money_daily, .field-auditprocess-money_accomod , .field-auditprocess-money_transport , .field-auditprocess-money_other {padding-right: 3%;float: left;width: 25%;}
+.field-auditprocess-audit, .field-auditprocess-audit_person {padding-right: 3%;float: left;width: 40%;}
+.field-auditprocess-date_start, .field-auditprocess-date_finish {padding-right: 3%;float: left;width: 40%;}
+.field-auditprocess-remote_mode {float: left;width: 20%;}
+.field-auditprocess-audit_chapter{padding-right: 3%;float: left;width: 20%;}
+.field-auditprocess-proposal #auditprocess-proposal , .field-auditprocess-comment #auditprocess-comment{height: 168px;}
+
+/* Стили для Свода ФО и Субьект*/
+.to1, .to2, .to3 {background: #fefef6;}
+.ttl1, .ttl2, .ttl3, .ttl4, .ttl5 {background:#f7f7ed;}
+
+/* Стили для проверок*/
+.audit-update .requestFalhCa ,
+.audit-update .requestCaBranch
+{width: 50%;float: left;}
+.audit-update .field-audit-fed_subject ,
+.audit-update .field-audit-audit_type
+{width: 50%;float: right;}
+.audit-update .field-audit-date_start,
+.audit-update .field-audit-date_finish
+{width: 40%;float: left;padding-right: 3%;}
+.audit-update .field-audit-duration{width: 20%;float: left;}
+.audit-update .field-audit-fed_district ,
+.audit-update .field-audit-organizer
+{width: 47%;float: left;padding-right: 3%;}
+.audit-update .field-audit-oiv{ width: 100%; }
+.leftfloat{width: 50%;float: left;}
+.rightfloat{width: 50%;float: right;}
+.divflow {display: flow-root;margin-bottom: 35px;}
+
+
+/* Стили для тенировочного процесса*/
+.training-process-form .field-trainingprocess-branch,
+.training-process-form .field-trainingprocess-subject,
+.training-process-form .field-trainingprocess-forestry,
+.training-process-form .field-trainingprocess-subforestry,
+.training-process-form .field-trainingprocess-training_forestry,
+.training-process-form .field-trainingprocess-training_subforestry
+{float: left;width: 50%;}
+.training-process-form .file-training_site_amount,
+.training-process-form .file-training_strip_amount,
+.training-process-form .file-training_contract_num
+{float: left;width: 33%;  margin-bottom: 15px;}
+.training-process-form .field-trainingprocess-training_date_start,
+.training-process-form .field-trainingprocess-training_date_finish
+{float: left;width: 50%;}
+.training-process-form .field-trainingprocess-branch,
+.training-process-form .field-trainingprocess-forestry,
+.training-process-form .field-trainingprocess-quarter,
+.training-process-form .field-trainingprocess-training_site_amount,
+.training-process-form .field-trainingprocess-training_strip_amount,
+.training-process-form .field-trainingprocess-training_contract_num,
+.training-process-form .field-trainingprocess-training_date_start,
+.training-process-form .field-trainingprocess-training_forestry
+{padding-right: 3%;}
+.training-process-form .file-person,
+.training-process-form .data-st-fi
+{width: 100%;float: left; margin-bottom: 15px;}
+.training-process-form .btn-success{float: left;margin-bottom: 15px;}
+.training-process-form .greenline{height: 1px;}
+.training-process-form .leftfloat{width: 50%;float: left;}
+.training-process-form .rightfloat{width: 50%;float: right;}
+.training-process-form .divflow
+{display: flow-root;margin-bottom: 35px;}
+.training-process-form .bottom_file {margin-top: 15px;}
+.training-process-form .field-trainingprocess-training_date_start,
+.training-process-form .field-trainingprocess-training_date_finish,
+.training-process-form .field-trainingprocess-person,
+.training-process-form .field-trainingprocess-training_site_amount,
+.training-process-form .field-trainingprocess-training_strip_amount,
+.training-process-form .field-trainingprocess-training_contract_num
+{margin-bottom:0;}
+.training-process-form .bottom_file {display: inline-flex;margin: 0;width: 100%;}
+.training-process-form .form-group.field-stripCard,
+.training-process-form .form-group.field-pppCard,
+.training-process-form .form-group.field-pppMap,
+.training-process-form .form-group.field-act,
+.training-process-form .form-group.field-invite,
+.training-process-form .form-group.field-taxCard,
+.training-process-form .form-group.field-statement,
+.training-process-form .form-group.field-orderBranch,
+.training-process-form .form-group.field-orderOiv,
+.training-process-form .form-group.field-stripCard
+{  margin: 10px 0 0 11px;}
+.training-process-form .btn-primary.btn-upl-file { display: block;margin-top: 10px;}
+.training-process-form .bottom_file h4{ width: 28%;}
